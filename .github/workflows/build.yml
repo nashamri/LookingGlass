@@ -191,7 +191,7 @@ jobs:
         cd LGIdd
         makensis -DBUILD_32BIT -DIVSHMEM installer.nsi
     - name: Upload IDD installer
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: looking-glass-idd-installer
         path: idd/x64/Release/LGIdd/looking-glass-idd-setup.exe
